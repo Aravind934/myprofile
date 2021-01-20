@@ -39,9 +39,9 @@ var transporter = nodemailer.createTransport({
   });
   
   var mailOptions = {
-    from: 'node@gmail.com',
+    from: 'aravindk6066@gmail.com',
     to: 'aravindk6066@gmail.con',
-    subject: 'name is Aravind have a message',
+    subject: 'You have a message',
     text: req.body.message
   };
   
@@ -49,7 +49,7 @@ var transporter = nodemailer.createTransport({
     if (error) {
       console.log(error);
     } else {
-      console.log('Email sent: ' + info.response);
+      //console.log('Email sent: ' + info.response);
       res.redirect('/');
     }
   })
